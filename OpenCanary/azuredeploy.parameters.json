@@ -10,9 +10,6 @@
     },
     "dnsNameForPublicIP": {
       "value": "mycanary1"
-    },
-    "sendgridPassword": {
-      "value": "dfwJKL342DSas"
     }
   }
 }

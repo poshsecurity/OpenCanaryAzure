@@ -60,9 +60,6 @@
       "type": "Microsoft.Network/networkSecurityGroups",
       "name": "[variables('networkSecurityGroupName')]",
       "location": "[resourceGroup().location]",
-      "dependsOn": [
-        "[concat('Sendgrid.Email/accounts/', parameters('sendgridAccountName'))]"
-      ],
       "properties": {
         "securityRules": [
           {
@@ -201,9 +198,9 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/minecraft-on-ubuntu/install_opencanary.sh"
+            "https://raw.githubusercontent.com/poshsecurity/OpenCanaryAzure/master/OpenCanary/install_opencanary.sh"
           ],
-          "commandToExecute": "[concat('bash install_minecraft.sh')]"
+          "commandToExecute": "bash install_opencanary.sh"
         }
       }
     }
