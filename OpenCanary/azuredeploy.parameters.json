@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "localadmin"
+    },
+    "adminPassword": {
+      "value": "jdlkE22saWDFW345"
+    },
+    "dnsNameForPublicIP": {
+      "value": "mycanary1"
+    },
+    "sendgridPassword": {
+      "value": "dfwJKL342DSas"
+    }
+  }
+}
